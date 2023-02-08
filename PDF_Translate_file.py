@@ -15,6 +15,7 @@ def translate_pdf(pdf_file):
     # translated_text = translate_to_french(pdf_text)
     # print("Translation:")
     # print(translated_text)
+# Save to in new PDF
     for page in range(len(pdf_reader.pages)):
         pdf_text += pdf_reader.pages[page].extract_text()
         translated_text = translate_to_french(pdf_text)
