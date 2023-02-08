@@ -10,6 +10,7 @@ def translate_to_french(sentence):
 def translate_pdf(pdf_file):
     pdf_reader = PyPDF2.PdfReader(pdf_file)
     pdf_text = ""
+# Show result in the terminal 
     # for page in range(len(pdf_reader.pages)):
     #     pdf_text += pdf_reader.pages[page].extract_text()
     # translated_text = translate_to_french(pdf_text)
