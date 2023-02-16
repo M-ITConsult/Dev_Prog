@@ -9,7 +9,8 @@ choice = int(input('Select your choice: '))
 if (choice == 1):
     link = str(input('Link: '))
     yt = YouTube(link)
-    stream = yt.streams.get_by_itag(137) # The itag 137 = .mp4 1080fps founded into the pytube doc
+    streams = yt.streams
+    stream = yt.streams.get_by_itag(22) # The itag 22 = .mp4 720p founded into the pytube doc
     stream.download()
 
 if (choice == 2):
