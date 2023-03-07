@@ -4,7 +4,7 @@
 from pytube import YouTube
 print('1. Video')
 print('2. Audio')
-choice = int(input('Select your choice: '))
+choice = int(input('Make your choice: '))
 
 if (choice == 1):
     link = str(input('Link: '))
